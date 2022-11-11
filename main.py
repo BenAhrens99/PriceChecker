@@ -14,15 +14,9 @@ import threading
 import time
 from overlay import Window
 import tkinter as tk
-def createWindow():
-    win.hide()
-    itemFont = ("Roboto",20,'bold')
-    win.launch()
 nameList = []
 inventory = []
 resultList = []
-win = Window(alpha=0.7)
-createWindow()
 t0 = time.time()
 def updateList():
     f = open("Relics.json",encoding="utf8")
@@ -100,3 +94,7 @@ def on_press(key):
             win.show()
 listener = Listener(on_press=on_press)
 listener.start()
+win = Window(alpha=0.7)
+win.hide()
+itemFont = ("Roboto",20,'bold')
+win.launch()
