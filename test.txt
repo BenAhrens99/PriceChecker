@@ -1,15 +1,17 @@
-name,url,price
 Zephyr Prime Chassis Blueprint,zephyr_prime_chassis,5
 Redeemer Prime Blade,redeemer_prime_blade,14
-Akjagara Prime Receiver,akjagara_prime_receiver,17
+Akjagara Prime Receiver,akjagara_prime_receiver,16
 Zhuge Prime Grip,zhuge_prime_grip,13
 Wyrm Prime Blueprint,wyrm_prime_blueprint,22
 Orthos Prime Blade,orthos_prime_blade,4
+Loki Prime Systems Blueprint,loki_prime_systems,87
 Odonata Prime Harness Blueprint,odonata_prime_harness,17
+Odonata Prime Systems Blueprint,odonata_prime_systems,13
 Hikou Prime Pouch,hikou_prime_pouch,17
-Reaper Prime Blueprint,reaper_prime_blueprint,20
+Reaper Prime Blueprint,reaper_prime_blueprint,19
 Rhino Prime Neuroptics Blueprint,rhino_prime_neuroptics,23
-Oberon Prime Neuroptics Blueprint,oberon_prime_neuroptics,30
+Ballistica Prime String,ballistica_prime_string,7
+Oberon Prime Neuroptics Blueprint,oberon_prime_neuroptics,31
 Volt Prime Neuroptics Blueprint,volt_prime_neuroptics,58
 Ballistica Prime Lower Limb,ballistica_prime_lower_limb,12
 Volt Prime Chassis Blueprint,volt_prime_chassis,11
@@ -17,13 +19,15 @@ Zhuge Prime Blueprint,zhuge_prime_blueprint,3
 Ninkondi Prime Chain,ninkondi_prime_chain,3
 Zhuge Prime Receiver,zhuge_prime_receiver,5
 Wukong Prime Neuroptics Blueprint,wukong_prime_neuroptics,12
-Ember Prime Neuroptics Blueprint,ember_prime_neuroptics,25
+Ember Prime Neuroptics Blueprint,ember_prime_neuroptics,26
 Nyx Prime Blueprint,nyx_prime_blueprint,14
+Nyx Prime Systems Blueprint,nyx_prime_systems,4
 Nyx Prime Neuroptics Blueprint,nyx_prime_neuroptics,18
 Rhino Prime Blueprint,rhino_prime_blueprint,24
 Tigris Prime Receiver,tigris_prime_receiver,5
 Helios Prime Carapace,helios_prime_carapace,11
-Trinity Prime Neuroptics Blueprint,trinity_prime_neuroptics,23
+Wyrm Prime Systems,wyrm_prime_systems,64
+Trinity Prime Neuroptics Blueprint,trinity_prime_neuroptics,17
 Fang Prime Handle,fang_prime_handle,4
 Nyx Prime Chassis Blueprint,nyx_prime_chassis,3
 Loki Prime Chassis Blueprint,loki_prime_chassis,32
@@ -33,11 +37,13 @@ Pyrana Prime Blueprint,pyrana_prime_blueprint,39
 Pyrana Prime Receiver,pyrana_prime_receiver,5
 Pyrana Prime Barrel,pyrana_prime_barrel,11
 Loki Prime Neuroptics Blueprint,loki_prime_neuroptics,17
-Ankyros Prime Blade,ankyros_prime_blade,15
+Ankyros Prime Blade,ankyros_prime_blade,16
 Ankyros Prime Gauntlet,ankyros_prime_gauntlet,27
 Bo Prime Blueprint,bo_prime_blueprint,21
 Silva & Aegis Prime Guard,silva_and_aegis_prime_guard,35
+Tigris Prime Stock,tigris_prime_stock,14
 Ash Prime Neuroptics Blueprint,ash_prime_neuroptics,15
+Vectis Prime Stock,vectis_prime_stock,23
 Bo Prime Handle,bo_prime_handle,28
 Carrier Prime Blueprint,carrier_prime_blueprint,18
 Vectis Prime Barrel,vectis_prime_barrel,31
@@ -47,25 +53,29 @@ Vasto Prime Blueprint,vasto_prime_blueprint,18
 Tipedo Prime Handle,tipedo_prime_handle,12
 Equinox Prime Blueprint,equinox_prime_blueprint,16
 Bronco Prime Barrel,bronco_prime_barrel,3
+Nova Prime Systems Blueprint,nova_prime_systems,16
 Frost Prime Blueprint,frost_prime_blueprint,73
 Bronco Prime Blueprint,bronco_prime_blueprint,5
 Burston Prime Receiver,burston_prime_receiver,8
 Fang Prime Blade,fang_prime_blade,11
-Vauban Prime Neuroptics Blueprint,vauban_prime_neuroptics,41
+Vauban Prime Neuroptics Blueprint,vauban_prime_neuroptics,39
+Hikou Prime Stars,hikou_prime_stars,16
 Nova Prime Neuroptics Blueprint,nova_prime_neuroptics,21
 Nova Prime Chassis Blueprint,nova_prime_chassis,54
 Nova Prime Blueprint,nova_prime_blueprint,18
 Frost Prime Neuroptics Blueprint,frost_prime_neuroptics,13
 Trinity Prime Blueprint,trinity_prime_blueprint,12
 Sybaris Prime Barrel,sybaris_prime_barrel,39
-Banshee Prime Chassis Blueprint,banshee_prime_chassis,28
+Banshee Prime Chassis Blueprint,banshee_prime_chassis,30
 Wukong Prime Chassis Blueprint,wukong_prime_chassis,2
 Hydroid Prime Neuroptics Blueprint,hydroid_prime_neuroptics,9
 Kavasa Prime Kubrow Collar Set,kavasa_prime_kubrow_collar_set,58
 Destreza Prime Handle,destreza_prime_handle,14
 Boltor Prime Receiver,boltor_prime_receiver,5
+Boltor Prime Stock,boltor_prime_stock,15
 Tigris Prime Barrel,tigris_prime_barrel,5
 Soma Prime Receiver,soma_prime_receiver,19
+Soma Prime Stock,soma_prime_stock,24
 Silva & Aegis Prime Hilt,silva_and_aegis_prime_hilt,12
 Hydroid Prime Chassis Blueprint,hydroid_prime_chassis,12
 Aklex Prime Blueprint,aklex_prime_blueprint,6
@@ -77,14 +87,14 @@ Scindo Prime Handle,scindo_prime_handle,14
 Rubico Prime Barrel,rubico_prime_barrel,6
 Loki Prime Blueprint,loki_prime_blueprint,21
 Dual Kamas Prime Blueprint,dual_kamas_prime_blueprint,16
-Latron Prime Barrel,latron_prime_barrel,19
+Latron Prime Barrel,latron_prime_barrel,18
 Nekros Prime Neuroptics Blueprint,nekros_prime_neuroptics,28
 Boar Prime Blueprint,boar_prime_blueprint,20
 Tiberon Prime Blueprint,tiberon_prime_blueprint,3
 Saryn Prime Blueprint,saryn_prime_blueprint,13
 Ballistica Prime Receiver,ballistica_prime_receiver,5
 Kogake Prime Gauntlet,kogake_prime_gauntlet,14
-Zephyr Prime Blueprint,zephyr_prime_blueprint,16
+Zephyr Prime Blueprint,zephyr_prime_blueprint,17
 Valkyr Prime Neuroptics Blueprint,valkyr_prime_neuroptics,6
 Venka Prime Blueprint,venka_prime_blueprint,6
 Euphona Prime Blueprint,euphona_prime_blueprint,12
@@ -94,17 +104,23 @@ Kavasa Prime Band,kavasa_prime_band,4
 Akbronco Prime Link,akbronco_prime_link,3
 Dakra Prime Handle,dakra_prime_handle,19
 Soma Prime Barrel,soma_prime_barrel,20
-Mag Prime Neuroptics Blueprint,mag_prime_neuroptics,21
+Mag Prime Neuroptics Blueprint,mag_prime_neuroptics,22
 Ash Prime Chassis Blueprint,ash_prime_chassis,15
 Tigris Prime Blueprint,tigris_prime_blueprint,44
+Ash Prime Systems Blueprint,ash_prime_systems,78
+Mag Prime Systems Blueprint,mag_prime_systems,30
 Vectis Prime Receiver,vectis_prime_receiver,48
 Bo Prime Ornament,bo_prime_ornament,39
 Wyrm Prime Carapace,wyrm_prime_carapace,30
 Sybaris Prime Blueprint,sybaris_prime_blueprint,14
 Wukong Prime Blueprint,wukong_prime_blueprint,20
+Wukong Prime Systems Blueprint,wukong_prime_systems,18
+Zhuge Prime String,zhuge_prime_string,13
 Destreza Prime Blade,destreza_prime_blade,45
 Aklex Prime Link,aklex_prime_link,50
+Banshee Prime Systems Blueprint,banshee_prime_systems,11
 Hydroid Prime Blueprint,hydroid_prime_blueprint,13
+Equinox Prime Systems Blueprint,equinox_prime_systems,37
 Paris Prime Blueprint,paris_prime_blueprint,12
 Akvasto Prime Blueprint,akvasto_prime_blueprint,48
 Akvasto Prime Link,akvasto_prime_link,20
@@ -116,6 +132,7 @@ Redeemer Prime Blueprint,redeemer_prime_blueprint,6
 Tipedo Prime Blueprint,tipedo_prime_blueprint,13
 Bronco Prime Receiver,bronco_prime_receiver,12
 Burston Prime Blueprint,burston_prime_blueprint,5
+Burston Prime Stock,burston_prime_stock,10
 Hikou Prime Blueprint,hikou_prime_blueprint,12
 Volt Prime Blueprint,volt_prime_blueprint,33
 Ember Prime Chassis Blueprint,ember_prime_chassis,26
@@ -126,10 +143,13 @@ Dethcube Prime Carapace,dethcube_prime_carapace,3
 Dethcube Prime Cerebrum,dethcube_prime_cerebrum,11
 Tekko Prime Gauntlet,tekko_prime_gauntlet,14
 Dethcube Prime Blueprint,dethcube_prime_blueprint,8
+Limbo Prime Systems Blueprint,limbo_prime_systems,9
 Ivara Prime Neuroptics Blueprint,ivara_prime_neuroptics,13
 Ivara Prime Chassis Blueprint,ivara_prime_chassis,14
+Ivara Prime Systems Blueprint,ivara_prime_systems,6
 Baza Prime Blueprint,baza_prime_blueprint,10
 Aksomati Prime Link,aksomati_prime_link,15
+Baza Prime Stock,baza_prime_stock,13
 Aksomati Prime Receiver,aksomati_prime_receiver,17
 Gram Prime Handle,gram_prime_handle,8
 Helios Prime Blueprint,helios_prime_blueprint,6
@@ -141,36 +161,41 @@ Lex Prime Blueprint,lex_prime_blueprint,2
 Orthos Prime Handle,orthos_prime_handle,9
 Reaper Prime Blade,reaper_prime_blade,27
 Scindo Prime Blueprint,scindo_prime_blueprint,4
+Ember Prime Systems Blueprint,ember_prime_systems,21
 Frost Prime Chassis Blueprint,frost_prime_chassis,20
+Rhino Prime Systems Blueprint,rhino_prime_systems,13
 Ember Prime Blueprint,ember_prime_blueprint,40
 Ash Prime Blueprint,ash_prime_blueprint,28
 Kavasa Prime Kubrow Collar Blueprint,kavasa_prime_kubrow_collar_blueprint,9
 Vauban Prime Blueprint,vauban_prime_blueprint,16
 Carrier Prime Carapace,carrier_prime_carapace,30
-Ankyros Prime Blueprint,ankyros_prime_blueprint,17
+Ankyros Prime Blueprint,ankyros_prime_blueprint,16
 Boar Prime Barrel,boar_prime_barrel,25
 Oberon Prime Chassis Blueprint,oberon_prime_chassis,18
 Silva & Aegis Prime Blade,silva_and_aegis_prime_blade,6
 Boltor Prime Blueprint,boltor_prime_blueprint,12
+Oberon Prime Systems Blueprint,oberon_prime_systems,36
 Baza Prime Receiver,baza_prime_receiver,13
 Galatine Prime Blueprint,galatine_prime_blueprint,57
 Banshee Prime Neuroptics Blueprint,banshee_prime_neuroptics,12
 Reaper Prime Handle,reaper_prime_handle,27
 Sicarus Prime Barrel,sicarus_prime_barrel,21
 Braton Prime Barrel,braton_prime_barrel,11
+Paris Prime String,paris_prime_string,12
 Sicarus Prime Receiver,sicarus_prime_receiver,27
 Glaive Prime Blade,glaive_prime_blade,40
 Akstiletto Prime Blueprint,akstiletto_prime_blueprint,6
 Akstiletto Prime Barrel,akstiletto_prime_barrel,27
 Akstiletto Prime Receiver,akstiletto_prime_receiver,24
-Akbolto Prime Receiver,akbolto_prime_receiver,19
+Akbolto Prime Receiver,akbolto_prime_receiver,21
 Paris Prime Upper Limb,paris_prime_upper_limb,4
 Akbolto Prime Blueprint,akbolto_prime_blueprint,6
 Silva & Aegis Prime Blueprint,silva_and_aegis_prime_blueprint,5
 Scindo Prime Blade,scindo_prime_blade,9
 Euphona Prime Barrel,euphona_prime_barrel,6
-Mag Prime Blueprint,mag_prime_blueprint,91
-Helios Prime Cerebrum,helios_prime_cerebrum,32
+Mag Prime Blueprint,mag_prime_blueprint,92
+Frost Prime Systems Blueprint,frost_prime_systems,24
+Helios Prime Cerebrum,helios_prime_cerebrum,35
 Paris Prime Lower Limb,paris_prime_lower_limb,10
 Equinox Prime Chassis Blueprint,equinox_prime_chassis,10
 Stradavar Prime Blueprint,stradavar_prime_blueprint,8
@@ -178,30 +203,37 @@ Titania Prime Neuroptics Blueprint,titania_prime_neuroptics,6
 Pangolin Prime Blade,pangolin_prime_blade,5
 Titania Prime Blueprint,titania_prime_blueprint,5
 Banshee Prime Blueprint,banshee_prime_blueprint,6
-Valkyr Prime Chassis Blueprint,valkyr_prime_chassis,30
+Valkyr Prime Chassis Blueprint,valkyr_prime_chassis,32
 Cernos Prime Blueprint,cernos_prime_blueprint,5
-Cernos Prime Lower Limb,cernos_prime_lower_limb,24
+Cernos Prime Lower Limb,cernos_prime_lower_limb,26
 Cernos Prime Upper Limb,cernos_prime_upper_limb,16
 Cernos Prime Grip,cernos_prime_grip,13
 Burston Prime Barrel,burston_prime_barrel,3
+Volt Prime Systems Blueprint,volt_prime_systems,19
 Dakra Prime Blade,dakra_prime_blade,33
 Glaive Prime Disc,glaive_prime_disc,34
+Hydroid Prime Systems Blueprint,hydroid_prime_systems,61
 Latron Prime Receiver,latron_prime_receiver,29
+Latron Prime Stock,latron_prime_stock,28
 Lex Prime Barrel,lex_prime_barrel,12
 Sybaris Prime Receiver,sybaris_prime_receiver,4
 Inaros Prime Chassis Blueprint,inaros_prime_chassis,6
 Inaros Prime Neuroptics Blueprint,inaros_prime_neuroptics,12
 Inaros Prime Blueprint,inaros_prime_blueprint,4
+Inaros Prime Systems Blueprint,inaros_prime_systems,12
+Panthera Prime Stock,panthera_prime_stock,4
 Karyst Prime Handle,karyst_prime_handle,3
 Panthera Prime Barrel,panthera_prime_barrel,8
 Panthera Prime Receiver,panthera_prime_receiver,8
 Panthera Prime Blueprint,panthera_prime_blueprint,7
 Karyst Prime Blueprint,karyst_prime_blueprint,13
 Karyst Prime Blade,karyst_prime_blade,10
+Braton Prime Stock,braton_prime_stock,4
 Dakra Prime Blueprint,dakra_prime_blueprint,7
 Glaive Prime Blueprint,glaive_prime_blueprint,540
 Akstiletto Prime Link,akstiletto_prime_link,5
 Oberon Prime Blueprint,oberon_prime_blueprint,4
+Cernos Prime String,cernos_prime_string,4
 Valkyr Prime Blueprint,valkyr_prime_blueprint,3
 Venka Prime Blades,venka_prime_blades,14
 Odonata Prime Blueprint,odonata_prime_blueprint,7
@@ -209,19 +241,24 @@ Saryn Prime Neuroptics Blueprint,saryn_prime_neuroptics,9
 Nami Skyla Prime Blade,nami_skyla_prime_blade,60
 Kronen Prime Handle,kronen_prime_handle,8
 Boar Prime Receiver,boar_prime_receiver,23
+Boar Prime Stock,boar_prime_stock,57
 Kogake Prime Boot,kogake_prime_boot,13
 Akbolto Prime Link,akbolto_prime_link,5
 Akbolto Prime Barrel,akbolto_prime_barrel,5
 Sicarus Prime Blueprint,sicarus_prime_blueprint,13
 Fang Prime Blueprint,fang_prime_blueprint,8
-Vauban Prime Chassis Blueprint,vauban_prime_chassis,13
+Vauban Prime Chassis Blueprint,vauban_prime_chassis,14
 Latron Prime Blueprint,latron_prime_blueprint,17
 Braton Prime Blueprint,braton_prime_blueprint,3
-Nikana Prime Hilt,nikana_prime_hilt,26
+Nikana Prime Hilt,nikana_prime_hilt,27
+Valkyr Prime Systems Blueprint,valkyr_prime_systems,16
 Venka Prime Gauntlet,venka_prime_gauntlet,42
 Akbronco Prime Blueprint,akbronco_prime_blueprint,9
-Euphona Prime Receiver,euphona_prime_receiver,25
+Euphona Prime Receiver,euphona_prime_receiver,27
+Carrier Prime Systems,carrier_prime_systems,13
 Spira Prime Blueprint,spira_prime_blueprint,12
+Helios Prime Systems,helios_prime_systems,6
+Mirage Prime Systems Blueprint,mirage_prime_systems,12
 Mirage Prime Blueprint,mirage_prime_blueprint,47
 Fragor Prime Head,fragor_prime_head,17
 Vectis Prime Blueprint,vectis_prime_blueprint,7
@@ -231,17 +268,20 @@ Nezha Prime Blueprint,nezha_prime_blueprint,3
 Guandao Prime Blueprint,guandao_prime_blueprint,3
 Mirage Prime Chassis Blueprint,mirage_prime_chassis,7
 Kogake Prime Blueprint,kogake_prime_blueprint,5
+Sybaris Prime Stock,sybaris_prime_stock,16
 Gram Prime Blueprint,gram_prime_blueprint,5
 Spira Prime Pouch,spira_prime_pouch,27
 Fragor Prime Blueprint,fragor_prime_blueprint,7
 Fragor Prime Handle,fragor_prime_handle,17
+Vauban Prime Systems Blueprint,vauban_prime_systems,68
 Carrier Prime Cerebrum,carrier_prime_cerebrum,56
 Saryn Prime Chassis Blueprint,saryn_prime_chassis,28
 Tiberon Prime Receiver,tiberon_prime_receiver,18
 Boltor Prime Barrel,boltor_prime_barrel,20
 Braton Prime Receiver,braton_prime_receiver,2
+Saryn Prime Systems Blueprint,saryn_prime_systems,9
 Nikana Prime Blueprint,nikana_prime_blueprint,12
-Nikana Prime Blade,nikana_prime_blade,27
+Nikana Prime Blade,nikana_prime_blade,28
 Zephyr Prime Neuroptics Blueprint,zephyr_prime_neuroptics,12
 Kronen Prime Blueprint,kronen_prime_blueprint,5
 Tiberon Prime Barrel,tiberon_prime_barrel,4
@@ -251,18 +291,26 @@ Ballistica Prime Upper Limb,ballistica_prime_upper_limb,5
 Nami Skyla Prime Blueprint,nami_skyla_prime_blueprint,15
 Akjagara Prime Link,akjagara_prime_link,5
 Stradavar Prime Barrel,stradavar_prime_barrel,3
+Stradavar Prime Stock,stradavar_prime_stock,13
 Odonata Prime Wings Blueprint,odonata_prime_wings,38
+Tiberon Prime Stock,tiberon_prime_stock,9
 Akjagara Prime Barrel,akjagara_prime_barrel,13
 Rubico Prime Receiver,rubico_prime_receiver,13
 Galatine Prime Blade,galatine_prime_blade,10
+Rubico Prime Stock,rubico_prime_stock,13
 Nekros Prime Blueprint,nekros_prime_blueprint,55
+Trinity Prime Systems Blueprint,trinity_prime_systems,22
 Titania Prime Chassis Blueprint,titania_prime_chassis,4
+Corinth Prime Stock,corinth_prime_stock,11
 Corinth Prime Blueprint,corinth_prime_blueprint,76
+Titania Prime Systems Blueprint,titania_prime_systems,18
+Atlas Prime Systems Blueprint,atlas_prime_systems,5
 Atlas Prime Neuroptics Blueprint,atlas_prime_neuroptics,48
 Atlas Prime Blueprint,atlas_prime_blueprint,10
+Dethcube Prime Systems,dethcube_prime_systems,11
 Limbo Prime Blueprint,limbo_prime_blueprint,6
 Destreza Prime Blueprint,destreza_prime_blueprint,4
-Gram Prime Blade,gram_prime_blade,11
+Gram Prime Blade,gram_prime_blade,10
 Limbo Prime Chassis Blueprint,limbo_prime_chassis,45
 Spira Prime Blade,spira_prime_blade,53
 Lex Prime Receiver,lex_prime_receiver,11
@@ -270,13 +318,17 @@ Mesa Prime Neuroptics Blueprint,mesa_prime_neuroptics,21
 Redeemer Prime Handle,redeemer_prime_handle,38
 Baza Prime Barrel,baza_prime_barrel,4
 Aksomati Prime Barrel,aksomati_prime_barrel,6
+Zephyr Prime Systems Blueprint,zephyr_prime_systems,35
 Limbo Prime Neuroptics Blueprint,limbo_prime_neuroptics,25
 Chroma Prime Blueprint,chroma_prime_blueprint,6
+Mesa Prime Systems Blueprint,mesa_prime_systems,37
 Mesa Prime Chassis Blueprint,mesa_prime_chassis,7
 Rubico Prime Blueprint,rubico_prime_blueprint,10
 Trinity Prime Chassis Blueprint,trinity_prime_chassis,8
 Ivara Prime Blueprint,ivara_prime_blueprint,6
 Aksomati Prime Blueprint,aksomati_prime_blueprint,10
+Nekros Prime Systems Blueprint,nekros_prime_systems,58
+Chroma Prime Systems Blueprint,chroma_prime_systems,6
 Chroma Prime Chassis Blueprint,chroma_prime_chassis,4
 Chroma Prime Neuroptics Blueprint,chroma_prime_neuroptics,11
 Akjagara Prime Blueprint,akjagara_prime_blueprint,12
@@ -284,38 +336,45 @@ Galatine Prime Handle,galatine_prime_handle,5
 Dual Kamas Prime Blade,dual_kamas_prime_blade,43
 Pangolin Prime Handle,pangolin_prime_handle,4
 Pangolin Prime Blueprint,pangolin_prime_blueprint,8
-Corinth Prime Barrel,corinth_prime_barrel,14
+Corinth Prime Barrel,corinth_prime_barrel,15
 Corinth Prime Receiver,corinth_prime_receiver,4
 Guandao Prime Blade,guandao_prime_blade,13
 Zakti Prime Blueprint,zakti_prime_blueprint,7
 Guandao Prime Handle,guandao_prime_handle,8
 Zakti Prime Barrel,zakti_prime_barrel,3
+Nezha Prime Systems Blueprint,nezha_prime_systems,10
 Nezha Prime Chassis Blueprint,nezha_prime_chassis,10
 Zakti Prime Receiver,zakti_prime_receiver,13
 Nezha Prime Neuroptics Blueprint,nezha_prime_neuroptics,12
 Octavia Prime Blueprint,octavia_prime_blueprint,15
 Tenora Prime Blueprint,tenora_prime_blueprint,10
 Tenora Prime Receiver,tenora_prime_receiver,9
+Tenora Prime Stock,tenora_prime_stock,3
 Pandero Prime Barrel,pandero_prime_barrel,2
 Tenora Prime Barrel,tenora_prime_barrel,8
 Octavia Prime Chassis Blueprint,octavia_prime_chassis,4
 Octavia Prime Neuroptics Blueprint,octavia_prime_neuroptics,5
 Pandero Prime Receiver,pandero_prime_receiver,8
+Octavia Prime Systems Blueprint,octavia_prime_systems,5
 Pandero Prime Blueprint,pandero_prime_blueprint,10
 Volnus Prime Handle,volnus_prime_handle,8
 Volnus Prime Head,volnus_prime_head,2
 Gara Prime Blueprint,gara_prime_blueprint,11
 Gara Prime Neuroptics Blueprint,gara_prime_neuroptics,3
+Gara Prime Systems Blueprint,gara_prime_systems,5
 Astilla Prime Blueprint,astilla_prime_blueprint,3
 Astilla Prime Receiver,astilla_prime_receiver,13
 Astilla Prime Barrel,astilla_prime_barrel,10
-Volnus Prime Blueprint,volnus_prime_blueprint,8
+Astilla Prime Stock,astilla_prime_stock,3
+Volnus Prime Blueprint,volnus_prime_blueprint,9
 Gara Prime Chassis Blueprint,gara_prime_chassis,4
 Nidus Prime Blueprint,nidus_prime_blueprint,3
 Strun Prime Blueprint,strun_prime_blueprint,8
 Magnus Prime Blueprint,magnus_prime_blueprint,12
 Strun Prime Receiver,strun_prime_receiver,12
 Strun Prime Barrel,strun_prime_barrel,3
+Nidus Prime Systems Blueprint,nidus_prime_systems,6
+Strun Prime Stock,strun_prime_stock,2
 Nidus Prime Neuroptics Blueprint,nidus_prime_neuroptics,13
 Nidus Prime Chassis Blueprint,nidus_prime_chassis,8
 Magnus Prime Receiver,magnus_prime_receiver,3
@@ -327,6 +386,7 @@ Harrow Prime Neuroptics Blueprint,harrow_prime_neuroptics,4
 Scourge Prime Barrel,scourge_prime_barrel,9
 Knell Prime Blueprint,knell_prime_blueprint,9
 Harrow Prime Chassis Blueprint,harrow_prime_chassis,2
+Harrow Prime Systems Blueprint,harrow_prime_systems,8
 Scourge Prime Handle,scourge_prime_handle,3
 Knell Prime Receiver,knell_prime_receiver,3
 Scourge Prime Blueprint,scourge_prime_blueprint,8
@@ -335,6 +395,9 @@ Corvas Prime Barrel,corvas_prime_barrel,10
 Corvas Prime Blueprint,corvas_prime_blueprint,3
 Nagantaka Prime Receiver,nagantaka_prime_receiver,3
 Nagantaka Prime Blueprint,nagantaka_prime_blueprint,7
+Corvas Prime Stock,corvas_prime_stock,7
+Nagantaka Prime Stock,nagantaka_prime_stock,3
+Garuda Prime Systems Blueprint,garuda_prime_systems,41
 Corvas Prime Receiver,corvas_prime_receiver,12
 Nagantaka Prime Barrel,nagantaka_prime_barrel,15
 Garuda Prime Neuroptics Blueprint,garuda_prime_neuroptics,7
@@ -347,9 +410,11 @@ Hystrix Prime Receiver,hystrix_prime_receiver,8
 Hystrix Prime Barrel,hystrix_prime_barrel,10
 Khora Prime Neuroptics Blueprint,khora_prime_neuroptics_blueprint,24
 Dual Keres Prime Blueprint,dual_keres_prime_blueprint,9
+Khora Prime Systems Blueprint,khora_prime_systems_blueprint,5
 Dual Keres Prime Blade,dual_keres_prime_blade,11
 Tatsu Prime Blade,tatsu_prime_blade,9
 Revenant Prime Chassis Blueprint,revenant_prime_chassis_blueprint,9
+Revenant Prime Systems Blueprint,revenant_prime_systems_blueprint,13
 Tatsu Prime Blueprint,tatsu_prime_blueprint,8
 Phantasma Prime Barrel,phantasma_prime_barrel,9
 Revenant Prime Neuroptics Blueprint,revenant_prime_neuroptics_blueprint,6
@@ -357,3 +422,4 @@ Tatsu Prime Handle,tatsu_prime_handle,26
 Phantasma Prime Blueprint,phantasma_prime_blueprint,20
 Phantasma Prime Receiver,phantasma_prime_receiver,13
 Revenant Prime Blueprint,revenant_prime_blueprint,13
+Phantasma Prime Stock,phantasma_prime_stock,8
