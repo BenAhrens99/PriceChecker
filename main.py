@@ -1,37 +1,27 @@
 import difflib
-import pyautogui as auto
-import cv2 as cv
-import numpy as np
-from numpy import asarray
-import pytesseract as tr
-from PIL import Image, ImageOps
-import requests as r
-import re
 import json
-from pynput.keyboard import Listener, Key
-import PySimpleGUI as sg
+import re
 import threading
 import time
-from overlay import Window
 import tkinter as tk
-nameList = []
+import cv2 as cv
+import numpy as np
+import pyautogui as auto
+import PySimpleGUI as sg
+import pytesseract as tr
+import requests as r
+from overlay import Window
+from PIL import Image, ImageOps
+from pynput.keyboard import Key, Listener
+from updateDB import updateItemsParallel
+from updateDB import csvFileToList
 inventory = []
 resultList = []
+nameList, urlList, priceList = csvFileToList()
 t0 = time.time()
 def updateList():
-    f = open("Relics.json",encoding="utf8")
-    items = json.loads(f.read())
-    urlList = []
-    for i in items:
-        for reward in i['rewards']:
-            itemName = reward['item']['name']
-            nameList.append(itemName)
-            try: 
-                itemURL = reward['item']['warframeMarket']['urlName']
-            except KeyError:
-                itemURL = ("N/A")
-                #Reward doesn't have a warframeMarket link
-            urlList.append(itemURL)
+    updateItemsParallel()
+    nameList, urlList, priceList = csvFileToList()
     return nameList,urlList
 def checkResults(screenRegion, pageSegmentMode):
     t3 = time.time()
@@ -56,18 +46,7 @@ def checkResults(screenRegion, pageSegmentMode):
     print(listOfText)
     return(listOfText)
 
-def getItemPrice(result, list):
-    name = urlList[list.index(result[0])]
-    if name != "N/A":
-        #x = r.get('https://warframe.market/items/'+ name)
-        x = r.get('https://api.warframe.market/v1/items/' + name + '/orders').json()
-        value = x['payload']['orders'][-1]['platinum']
-        #results = re.search("Price: [0-9]{1,}", x.text)
-        #TODO Store Value or Display Text
-        resultList.append([result[0],value])
-        label = tk.Label(win.root, text=result[0] +" Price: "+ str(value), background='grey',fg='black',font=itemFont)
-        label.pack()
-        print(result[0] +" Price: "+ str(value))
+
 def checkSimilar(itemName, list):
     result = difflib.get_close_matches(itemName,list, n = 1, cutoff=0.6)
     if result:
@@ -76,25 +55,15 @@ def checkSimilar(itemName, list):
         result = difflib.get_close_matches((itemName + " Blueprint"),list, n=1,cutoff=0.75)
         if result:
             getItemPrice(result, list)
-
-nameList, urlList = updateList()
+def getItemPrice(result, list):
+    return priceList[list.index(result)]
 def on_press(key):
     if hasattr(key, 'char'):
         if key.char == '0':
-            resultList = []
-            t0 = time.time()
             text = checkResults([460,410,990,50],'12')
             #Check all rewards, get prices
             for t in text:
-                checkSimilar(t, nameList)
-            print(resultList)
-            t1 = time.time()
-            print(t1-t0)
-            win.position = 1350,270
-            win.show()
+                checkSimilar(t, nameList)   
 listener = Listener(on_press=on_press)
+checkSimilar("braton prime stock", nameList)
 listener.start()
-win = Window(alpha=0.7)
-win.hide()
-itemFont = ("Roboto",20,'bold')
-win.launch()
