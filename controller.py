@@ -32,9 +32,13 @@ class DBcontroller:
             count = 0
             plat = 0
             for o in orders:
-                quant = o['quantity']
-                plat = plat + (o['platinum'] * quant)
-                count = count + (1 * quant)
+                if o['user']['status'] == 'online' or 'ingame':
+                    quant = o['quantity']
+                    plat = plat + (o['platinum'] * quant)
+                    count = count + (1 * quant)
+                else:
+                    plat = plat + (o['platinum'])
+                    count = count + (1)
             value = round(plat / count)
         except IndexError:
             value = 0
@@ -86,8 +90,14 @@ class DBcontroller:
             data = list(reader)
             self.nameList,self.urlList,self.priceList = [sublist[0] for sublist in data], [sublist[1] for sublist in data], [sublist[2] for sublist in data]
     def checkSimilarAndGetPrice(self,itemName):
-        result = difflib.get_close_matches(itemName,self.nameList, n = 1, cutoff=0.6)
-        return self.getItemPrice(result[0])
+        result = difflib.get_close_matches(itemName,self.nameList, n = 1, cutoff=0.8)
+        if not result:
+            result = difflib.get_close_matches(itemName + " Blueprint",self.nameList, n = 1, cutoff=0.9)
+        try:
+            price = self.getItemPrice(result[0])
+        except IndexError:
+            return 
+        return price
     def getItemPrice(self,result):
         price = self.priceList[self.nameList.index(result)]
         print(result + " Price: " + price)
@@ -95,26 +105,25 @@ class DBcontroller:
 
 
 class WindowCapture:
-    w = 0
-    h = 0
     hwnd = None
     def __init__(self,windowName):
         self.hwnd = win32gui.FindWindow(None, windowName)
         if not self.hwnd:
             raise Exception('Window not found: {}'.format(windowName))
-        self.w = 1920
-        self.h = 1080
     def captureWindow(self):
+        rect = win32gui.GetWindowRect(self.hwnd)
+        w = rect[2] - rect[0]
+        h = rect[3] - rect[1]
         wDC = win32gui.GetWindowDC(self.hwnd)
         dcObj=win32ui.CreateDCFromHandle(wDC)
         cDC=dcObj.CreateCompatibleDC()
         dataBitMap = win32ui.CreateBitmap()
-        dataBitMap.CreateCompatibleBitmap(dcObj, self.w, self.h)
+        dataBitMap.CreateCompatibleBitmap(dcObj, w, h)
         cDC.SelectObject(dataBitMap)
-        cDC.BitBlt((0,0),(self.w, self.h) , dcObj, (0,0), win32con.SRCCOPY)
+        cDC.BitBlt((0,0),(w, h) , dcObj, (0,0), win32con.SRCCOPY)
         signedIntsArray = dataBitMap.GetBitmapBits(False)
         img = np.array(signedIntsArray).astype(dtype="uint8")
-        img.shape = (self.h, self.w, 4)
+        img.shape = (h, w, 4)
         img = img[...,:3]
         img = np.ascontiguousarray(img)
         return img
@@ -124,7 +133,7 @@ class WindowCapture:
         #im2 = auto.screenshot(region=screenRegion)
             im2 = Image.fromarray(screenshot)
             im2 = ImageOps.grayscale(im2)
-            im2 = im2.resize([im2.width * 3, im2.height * 3])
+            im2 = im2.resize([im2.width * 2, im2.height * 2])
 
             #Convert to Black and White
             im_gray = np.array(im2.convert('L'))
@@ -134,7 +143,7 @@ class WindowCapture:
             binary = Image.fromarray(np.uint8(im_bool))
             binary.save('test.png')
             #Save as image
-            text = image_to_string(binary, config='--oem 3 --psm 1 \
+            text = image_to_string(binary, config='--oem 3 --psm 12 \
                 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz') #Using PSM 7 for single item (i.e inventory) and PSM 12 for a line of items, i.e reward screen
             listOfText = text.split('\n')
             print(listOfText)
