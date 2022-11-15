@@ -48,6 +48,7 @@ def updateItemsParallel():
     #Put it all into a file
     return http_get_with_requests_parrallel(httpList, urlList, nameList)
 def writeToFile(results):
+    #Will most likely change to a actual database so it can pull images aswell, will impact refresh time so TBD
     try:
         os.remove(FILENAME)
     except FileNotFoundError:
@@ -59,9 +60,14 @@ def writeToFile(results):
         furl = i[1]
         fprice = i[2]
         f.write(fname + "," + furl + "," + str(fprice) + "\n")
+    #Kappa beacon
+    f.write("Forma Blueprint,kappa_beacon,0")
     f.close()
-def csvFileToList(): #TODO
+def csvFileToList(): #TODO Find a more optimal way return the data
     with open(FILENAME) as csv_file:
         reader = csv.reader(csv_file,delimiter=',')
         data = list(reader)
-    return data
+        nameList = [sublist[0] for sublist in data]
+        urlList = [sublist[1] for sublist in data]
+        priceList = [sublist[2] for sublist in data]
+    return nameList, urlList, priceList

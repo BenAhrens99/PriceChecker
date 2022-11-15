@@ -12,21 +12,16 @@ from PIL import Image, ImageOps
 from pynput.keyboard import Key, Listener
 
 import updateDB as u
+
 def updateList():
-    global listOfLists, nameList, urlList, priceList
+    global nameList, urlList, priceList
     u.writeToFile(u.updateItemsParallel())
-    listOfLists = u.csvFileToList()
-    nameList = [sublist[0] for sublist in listOfLists]
-    urlList = [sublist[1] for sublist in listOfLists]
-    priceList = [sublist[2] for sublist in listOfLists]
 try:
-    listOfLists = u.csvFileToList()
+    nameList, urlList, priceList = u.csvFileToList()
 except FileNotFoundError:
-    print("no file currently loaded, creating now")
+    print("No file currently loaded, Creating now")
     updateList()
-nameList = [sublist[0] for sublist in listOfLists]
-urlList = [sublist[1] for sublist in listOfLists]
-priceList = [sublist[2] for sublist in listOfLists]
+    nameList, urlList, priceList = u.csvFileToList()
 
 def checkResults(screenRegion, pageSegmentMode):
     im2 = auto.screenshot(region=screenRegion)
