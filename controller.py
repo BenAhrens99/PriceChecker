@@ -114,16 +114,19 @@ class WindowCapture:
         rect = win32gui.GetWindowRect(self.hwnd)
         w = rect[2] - rect[0]
         h = rect[3] - rect[1]
+        wr = int(w / 1.8)
+        hr = int(h / 10)
         wDC = win32gui.GetWindowDC(self.hwnd)
         dcObj=win32ui.CreateDCFromHandle(wDC)
         cDC=dcObj.CreateCompatibleDC()
         dataBitMap = win32ui.CreateBitmap()
-        dataBitMap.CreateCompatibleBitmap(dcObj, w, h)
+        dataBitMap.CreateCompatibleBitmap(dcObj, wr, hr)
         cDC.SelectObject(dataBitMap)
-        cDC.BitBlt((0,0),(w, h) , dcObj, (0,0), win32con.SRCCOPY)
+        #TODO Set screen region relative to resolution
+        cDC.BitBlt((0,0),(wr, hr) , dcObj, (int(w * 0.25),int(h * 0.35)), win32con.SRCCOPY)
         signedIntsArray = dataBitMap.GetBitmapBits(False)
         img = np.array(signedIntsArray).astype(dtype="uint8")
-        img.shape = (h, w, 4)
+        img.shape = (hr, wr, 4)
         img = img[...,:3]
         img = np.ascontiguousarray(img)
         return img

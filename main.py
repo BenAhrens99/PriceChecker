@@ -13,7 +13,7 @@ from pynput.keyboard import Key, Listener
 from controller import DBcontroller, WindowCapture
 global nameList, urlList, priceList
 
-wc = WindowCapture('Untitled - Paint')
+wc = WindowCapture('Warframe')
 c = DBcontroller()
 
 
